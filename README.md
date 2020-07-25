@@ -1,7 +1,24 @@
-# Error Handling
-All the end points could return an error with different status codes, the following is a description of what to expect
+## Error Handling
+All the end points could return an error as JSON object descriping what happened, the following is the JSON data returned
 
+success: False
+error: The error code that occurred (400, 404, 405, 422, 500)
+message: a simple message descriping what went wrong.
 
+### Example
+Since patch is not a method that we implement or allow.
+```bash
+curl --location --request PATCH 'http://127.0.0.1:5000/questions'
+```
+```json
+{
+  "error": 405,
+  "message": "Method Not Allowed",
+  "success": false
+}
+```
+
+## Endpoints
 ### GET /categories
 Fetches a list of all available categories.
 #### Return
