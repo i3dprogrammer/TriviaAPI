@@ -281,3 +281,11 @@ curl --location --request POST 'http://127.0.0.1:5000/quizzes' --header 'Content
   }
 }
 ```
+## Testing
+To run the tests, run
+```
+dropdb trivia_test
+createdb trivia_test
+psql trivia_test < trivia.psql
+python test_flaskr.py
+```
