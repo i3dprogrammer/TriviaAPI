@@ -2,7 +2,9 @@
 All the end points could return an error as JSON object descriping what happened, the following is the JSON data returned
 
 success: False.
+
 error: The error code that occurred (400, 404, 405, 422, 500).
+
 message: a simple message descriping what went wrong.
 
 ### Example
