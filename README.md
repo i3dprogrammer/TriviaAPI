@@ -6,6 +6,6 @@ TriviaAPI
 #### Return Data
   Returns an object with a single key, categories, that contains a dictionary with the kvp id and type
 #### Example
-  ```bash
+  ```sh
   curl -X GET /categories
   ```
